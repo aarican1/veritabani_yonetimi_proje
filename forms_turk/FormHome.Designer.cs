@@ -45,16 +45,17 @@ namespace forms_turk
             LabelAdd = new Label();
             LabelList = new Label();
             panel1 = new Panel();
-            panel2 = new Panel();
             label1 = new Label();
             button4 = new Button();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(100, 93);
+            button1.Location = new Point(768, 275);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
@@ -65,9 +66,9 @@ namespace forms_turk
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(27, 3);
+            listBox1.Location = new Point(671, 185);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(193, 84);
+            listBox1.Size = new Size(250, 84);
             listBox1.TabIndex = 1;
             // 
             // button2
@@ -179,26 +180,20 @@ namespace forms_turk
             // 
             // panel1
             // 
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(listBox1);
-            panel1.Location = new Point(546, 197);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(button4);
+            panel1.Controls.Add(textBox2);
+            panel1.Location = new Point(348, 185);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 125);
+            panel1.Size = new Size(233, 239);
             panel1.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(label1);
-            panel2.Location = new Point(693, 57);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(250, 125);
-            panel2.TabIndex = 15;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Impact", 20F);
-            label1.Location = new Point(42, 49);
+            label1.Location = new Point(689, 331);
             label1.Name = "label1";
             label1.Size = new Size(152, 42);
             label1.TabIndex = 16;
@@ -206,20 +201,48 @@ namespace forms_turk
             // 
             // button4
             // 
-            button4.Location = new Point(573, 383);
+            button4.Location = new Point(70, 194);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 17;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(0, 92);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(233, 27);
+            textBox2.TabIndex = 18;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Impact", 10F);
+            label2.Location = new Point(52, 12);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 21);
+            label2.TabIndex = 18;
+            label2.Text = "Mahalle Ekle";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Impact", 9F);
+            label3.Location = new Point(0, 61);
+            label3.Name = "label3";
+            label3.Size = new Size(110, 19);
+            label3.TabIndex = 19;
+            label3.Text = "Mahalle Adı Ekle";
+            // 
             // FormHome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1020, 671);
-            Controls.Add(button4);
-            Controls.Add(panel2);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(listBox1);
             Controls.Add(panel1);
             Controls.Add(LabelList);
             Controls.Add(LabelAdd);
@@ -236,8 +259,7 @@ namespace forms_turk
             Text = "Türk Konveksiyon";
             Load += FormHome_Load;
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -284,9 +306,11 @@ namespace forms_turk
         private Label LabelAdd;
         private Label LabelList;
         private Panel panel1;
-        private Panel panel2;
         private Label label1;
        
         private Button button4;
+        private TextBox textBox2;
+        private Label label3;
+        private Label label2;
     }
 }
